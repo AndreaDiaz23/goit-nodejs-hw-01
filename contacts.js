@@ -3,11 +3,6 @@ const path = require("path");
 
 const contactsPath = path.resolve("db/contacts.json");
 
-/*
- * Comenta y anota el valor
- */
-
-// TODO: documenta cada función
 async function listContacts() {
   try {
     const contacts = await fs.readFile(contactsPath);

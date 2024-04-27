@@ -1,4 +1,3 @@
-/* const argv = require("yargs").argv; */
 const contacts = require("./contacts");
 const { Command } = require("commander");
 const program = new Command();
@@ -14,7 +13,6 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-// TODO: refactorizar
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
